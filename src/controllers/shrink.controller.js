@@ -1,8 +1,9 @@
+const chalk = require('chalk');
 const bodyParser = require('body-parser');
 const router = require('express').Router();
 const shrinkSchema = require('../models/shrink.schema');
 
-console.log('\n# Mounting Shrink Controller');
+console.log(`    ${chalk.yellowBright('-')} Mounting ${chalk.blueBright('Shrink')} Controller`);
 
 router.use(bodyParser.json());
 
